@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Local temp files
+*.log
+.DS_Store
+Thumbs.db
+
+# Never upload real patient data / test DICOM
+tests/
+*.dcm

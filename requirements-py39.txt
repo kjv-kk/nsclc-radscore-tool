@@ -1,0 +1,7 @@
+# Feature-extraction side (python39, the only PyRadiomics-capable env) dependencies.
+# Note: PyRadiomics 3.1.0 supports Python <= 3.9 only. Do not upgrade numpy/SimpleITK,
+#       otherwise feature values may diverge from the training set.
+pyradiomics==3.1.0
+SimpleITK==2.5.7
+numpy==1.26.4
+pandas>=1.3.0

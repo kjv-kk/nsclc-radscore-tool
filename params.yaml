@@ -1,0 +1,28 @@
+# PyRadiomics parameter file (Phase 3, FROZEN)
+# Spec: radiomics addendum plan v1.1, Phase 3
+# Do not edit after freeze; any change requires a version bump + log entry.
+# PyRadiomics 3.1.0
+# NOTE: keep this file pure ASCII (PyRadiomics reads YAML with system locale).
+
+imageType:
+  Original: {}
+  LoG:
+    sigma: [1.0, 2.0, 3.0]   # mm (1mm isotropic after resampling)
+  Wavelet: {}                 # all 8 decompositions
+
+featureClass:
+  shape:
+  firstorder:
+  glcm:
+  glszm:
+  glrlm:
+  ngtdm:
+  gldm:
+
+setting:
+  binWidth: 25                # HU; CT absolute scale, no normalization
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: sitkBSpline
+  correctMask: true           # tolerate tiny mask geometry float error
+  label: 1
+  geometryTolerance: 0.000001
